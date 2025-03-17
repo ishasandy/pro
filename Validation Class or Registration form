@@ -1,3 +1,16 @@
+___________________________________________________________________________________
+|                    Registration Form
+|
+| Username      textbox       (Required Field Validator)
+| age           textbox        (Range Validator)
+| email         textbox         (Regular Expression)
+| password      textbox
+| retype password  textbox      (Enter Valid Password)
+|  
+|     register(button)
+|
+|_______________________________________________________________________________
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs"
 Inherits="Validation_Class.WebForm1" %>
 <!DOCTYPE html>
