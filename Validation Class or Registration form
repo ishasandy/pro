@@ -1,4 +1,4 @@
-___________________________________________________________________________________
+_________________________________________________________________________________
 |                    Registration Form
 |
 | Username      textbox       (Required Field Validator)
@@ -108,3 +108,4 @@ OnClick="Button1_Click" PostBackUrl="~/WebForm2.aspx" />
 </form>
 </body>
 </html>
+
