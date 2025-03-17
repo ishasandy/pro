@@ -1,3 +1,24 @@
+________________________________________________________________________________   
+|                                     LOGIN PAGE (Label 1)                         
+|                                                                            
+|     User Name (Label 2)     (TextBox 1)
+|
+|     Password (Label 3)     (TextBox 2)
+|
+|
+|                                          Submit(button)
+|                                                                                              
+|________________________________________________________________________________
+
+____________________________________________________________________________
+|                                Vote Eligibility (label 1)
+|
+| enter your age (label 2)      (TextBox1)
+|      
+|                                check (button)
+|
+|_________________________________________________________________________________
+
 Source Code (Form1):
 using System;
 using System.Collections.Generic;
