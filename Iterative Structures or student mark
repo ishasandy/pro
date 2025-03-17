@@ -1,3 +1,14 @@
+__________________________________________________________________
+|            Student Mark System
+| Student name   textbox
+| subject1         ''                   list Box
+| subject2         ''
+| subject3         ''                  
+| Enter Student Name To search    textbox
+|
+|add(button)   display     search    average     exit
+|__________________________________________________________________
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
