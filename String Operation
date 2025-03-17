@@ -64,3 +64,122 @@ Label11.Text = "Output: " + output;
 }
 }
 }
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+class Program
+{
+static void Main(string[] args)
+{
+{
+string s = string.Empty;
+Console.Write("Enter the String:");
+s = Console.ReadLine();
+int number = 0;
+int capitalLetter = 0;
+int smallletter = 0;
+int space = 0;
+int SpecialSymbol = 0;
+char[] a = s.ToCharArray();
+for (int i = 0; i < a.Length; i++)
+{
+if (a[i] >= 48 && a[i] <= 58)
+
+{
+number += 1;
+}
+else if (a[i] >= 65 && a[i] <= 90)
+{
+capitalLetter += 1;
+}
+else if (a[i] >= 97 && a[i] <= 122)
+{
+smallletter += 1;
+}
+else if (a[i] == 32)
+{
+space += 1;
+}
+else
+{
+SpecialSymbol += 1;
+}
+}
+Console.Write("Capital Letter " + capitalLetter);
+Console.Write("\nsmall letter " + smallletter);
+Console.Write("\nnumber are " + number);
+Console.Write("\nTotal Spaces " + space);
+Console.Write("\nTotal Special Symbol are " + SpecialSymbol);
+
+Console.WriteLine("\n\n\t\t\t\t Choose a string manipulation function:");
+Console.WriteLine("1. Clone");
+Console.WriteLine("2. Contains");
+Console.WriteLine("3. ToLower");
+Console.WriteLine("4. ToUpper");
+Console.WriteLine("5. Trim");
+Console.WriteLine("6. Substring");
+Console.WriteLine("7. Replace");
+string choice = Console.ReadLine();
+int ch = int.Parse(choice);
+string output = "";
+
+switch (ch)
+{
+case 1:
+String b = (String)s.Clone();
+output = b;
+Console.WriteLine("Output: " + output);
+break;
+case 2:
+Console.Write("Enter target substring: ");
+string tar = Console.ReadLine();
+Console.WriteLine(s.Contains(tar));
+break;
+case 3:
+
+output = s.ToLower();
+Console.WriteLine("Output: " + output);
+break;
+case 4:
+output = s.ToUpper();
+Console.WriteLine("Output: " + output);
+break;
+case 5:
+output = s.Trim();
+Console.WriteLine("Output: " + output);
+break;
+case 6:
+Console.Write("Enter start index: ");
+int start = int.Parse(Console.ReadLine());
+Console.Write("Enter length: ");
+int length = int.Parse(Console.ReadLine());
+output = s.Substring(start, length);
+Console.WriteLine("Output: " + output);
+break;
+case 7:
+Console.Write("Enter target substring: ");
+string target = Console.ReadLine();
+Console.Write("Enter replacement substring: ");
+string replacement = Console.ReadLine();
+output = s.Replace(target, replacement);
+
+Console.WriteLine("Output: " + output);
+break;
+default:
+Console.WriteLine("Invalid choice.");
+break;
+}
+Console.WriteLine("Press any key to exit.");
+Console.ReadKey();
+}
+}
+}
+}
