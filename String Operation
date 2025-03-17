@@ -1,3 +1,19 @@
+_____________________________________________________________________
+|STRING OPERATIONS
+|enter a string : textbox
+|submit(button)
+|label1
+|enter a string : textbox
+|choose the operation to be performed : dropdown box
+|enter the string to check : textbox
+|enter the start index : textbox
+|enter the length to be check : textbox
+|enter the string want to be replaced : textbox
+|enter replaced string : textbox
+|apply(button)
+|label2                                                              
+|___________________________________________________________________
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
