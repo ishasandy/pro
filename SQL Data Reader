@@ -1,3 +1,10 @@
+_______________________________________________________________
+| name   textbox
+| age     textbox
+| submit
+|sql data source
+|_____________________________________________________________________
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
